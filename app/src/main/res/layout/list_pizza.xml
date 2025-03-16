@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DED3E4"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="130dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        app:srcCompat="@mipmap/icon" />
+
+    <TextView
+        android:id="@+id/nomPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        android:textColor="#100F0F" />
+
+    <TextView
+        android:id="@+id/temps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nomPizza"
+        android:layout_alignBottom="@+id/photo"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="3dp"
+        android:text="TextView"
+        android:textColor="#100F0F" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="17dp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/idf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/temps"
+        android:layout_alignStart="@+id/nomPizza"
+        android:layout_marginStart="-143dp"
+        android:layout_marginBottom="101dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/nomPizza"
+        android:layout_alignStart="@+id/nomPizza"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@mipmap/ingredient" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/nomPizza"
+        android:layout_alignStart="@+id/nomPizza"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="52dp"
+        app:srcCompat="@mipmap/clock" />
+
+    <TextView
+        android:id="@+id/nbIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-20dp"
+        android:text="TextView"
+        android:textColor="#100F0F" />
+
+
+</RelativeLayout>
